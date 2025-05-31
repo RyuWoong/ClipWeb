@@ -1,7 +1,11 @@
-function SharedPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+interface SharedPageProps {
+  params: Promise<{ id: string }>;
+}
 
-  return <div>Hello,{id}</div>;
+async function SharedPage({ params }: SharedPageProps) {
+  const { id } = await params;
+
+  return <div>Hello, {id}</div>;
 }
 
 export default SharedPage;

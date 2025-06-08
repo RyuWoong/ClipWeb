@@ -8,7 +8,7 @@ export interface SharedPageProps {
 
 async function SharedPage({ params }: SharedPageProps) {
   const { id } = await params;
-  const data = await fetch(`${process.env.API_URL}/v1/sharedgroup/?key=${id}`);
+  const data = await fetch(`${process.env.API_URI}/v1/sharedgroup/?key=${id}`);
   const links = await data.json();
 
   if (!links.data) {

@@ -46,37 +46,7 @@
   justify-content: center;
 }
 
-.videoContainer {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  padding: 0 10%;
-}
 
-.video {
-  width: 30%;
-  aspect-ratio: 1080/1920;
-}
-
-.videoContent {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.videoContent p {
-  white-space: pre-wrap;
-  word-break: keep-all;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: var(--font-color);
-}
-
-.appStoreLink {
-  cursor: pointer;
-}
 
 @keyframes typing {
   0% {

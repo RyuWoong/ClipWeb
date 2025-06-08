@@ -1,0 +1,46 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding: 3rem 1rem;
+}
+
+.wrapper {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--font-color);
+  font-family: var(--font-permanent-marker);
+  margin-bottom: 3rem;
+}
+
+.bookmarkList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

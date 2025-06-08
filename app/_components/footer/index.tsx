@@ -1,12 +1,17 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import Link from 'next/link';
 
 function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <p className={styles.copyright}>© 2025 RyuWoong</p>
-        <p>
+        <div className={styles.links}>
+          <Link href="/privacy">개인정보 처리방침</Link>
+          <Link href="/patch">패치 노트</Link>
+        </div>
+        {/* <p>
           <a href="https://github.com/RyuWoong" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
             <svg
               height="24"
@@ -22,7 +27,7 @@ function Footer() {
               ></path>
             </svg>
           </a>
-        </p>
+        </p> */}
       </div>
     </footer>
   );

@@ -3,7 +3,8 @@
   --secondary-background: #f9fafb;
   --foreground: #0a0a0a;
   --background-reverse: #0a0a0a;
-  --primary: #ffca1a;
+  --primary: #ffd66b;
+  --secondary: #4da8da;
   --font-color: #000000;
   --secondary-font-color: #4b5563;
 }
@@ -14,7 +15,8 @@
     --secondary-background: #1a1a1a;
     --foreground: #ededed;
     --background-reverse: #ededed;
-    --primary: #ffe880;
+    --primary: #ffd66b;
+    --secondary: #4da8da;
     --font-color: #ffffff;
     --secondary-font-color: #b8b8b8;
   }

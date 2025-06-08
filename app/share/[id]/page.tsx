@@ -1,3 +1,4 @@
+import { Footer } from '@/app/_components';
 import { BookmarkCard, Empty } from './_components';
 import styles from './page.module.css';
 import { Bookmark } from '@/types';
@@ -26,13 +27,13 @@ async function SharedPage({ params }: SharedPageProps) {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <h1 className={styles.title}>CLIP</h1>
-
         <div className={styles.bookmarkList}>
           {links.data.map((link: Bookmark, index: number) => (
             <BookmarkCard key={link.id} link={link} index={index} />
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

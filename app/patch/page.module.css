@@ -1,0 +1,192 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--primary);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--font-permanent-marker);
+  color: var(--font-color);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--secondary-font-color);
+  font-weight: 400;
+}
+
+.patchList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.patchItem {
+  background: var(--secondary-background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.patchItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.patchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.versionBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.versionNumber {
+  background: var(--secondary);
+  color: var(--background-reverse);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.latestBadge {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.date {
+  color: var(--secondary-font-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.patchTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--font-color);
+  margin-bottom: 1rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureItem {
+  position: relative;
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  color: var(--font-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255, 202, 26, 0.1);
+}
+
+.featureItem:last-child {
+  border-bottom: none;
+}
+
+.featureItem::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--primary);
+  text-align: center;
+}
+
+.footerText {
+  color: var(--secondary-font-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .patchItem {
+    padding: 1rem;
+  }
+
+  .patchHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .versionBadge {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .patchTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .featureItem {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+}

@@ -19,6 +19,7 @@ async function SharedPage({ params }: SharedPageProps) {
           <h1 className={styles.title}>CLIP</h1>
           <Empty />
         </div>
+        <Footer />
       </div>
     );
   }

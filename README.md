@@ -11,8 +11,8 @@ Swift 기반으로 만들어졌으며, iOS, iPadOS, MacOS에서 사용할 수 �
 
 ## Planning
 
-- ⚒️ Landing Page
-- 💭 My Group Share
+- ✅ Landing Page
+- ✅ My Group Share
 - 💭 Quick Save With Group
 - 💭 Profile
 - 💭 Widget

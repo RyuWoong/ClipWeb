@@ -19,6 +19,14 @@
   margin: 0;
 }
 
+.links {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: var(--font-color);
+  margin: 0;
+}
+
 .githubLink {
   display: flex;
   align-items: center;

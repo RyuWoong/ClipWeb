@@ -2,6 +2,15 @@ import { PatchNote } from '@/types';
 
 export const patchNotes: PatchNote[] = [
   {
+    version: '1.0.1',
+    date: '2025-06-09',
+    title: '그룹 공유 추가!',
+    features: [
+      '그룹 공유 기능 추가!',
+      '그룹 공유 기능을 사용하면 웹을 통해 여러사람에게 내가 저장한 콘텐츠를 공유할 수 있어요.',
+    ],
+  },
+  {
     version: '1.0.0',
     date: '2025-05-20',
     title: '첫 출시',

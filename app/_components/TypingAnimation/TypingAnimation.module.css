@@ -1,0 +1,24 @@
+.centerText {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--font-color);
+  white-space: nowrap;
+  position: relative;
+  min-height: 1.2em; /* 높이 고정으로 깜빡임 방지 */
+}
+
+.cursor {
+  color: var(--font-color);
+  opacity: 1;
+  transition: opacity 0.1s ease;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

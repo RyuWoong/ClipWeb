@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: 'CLIP - 당신의 웹 컨텐츠 저장소',
   description: '당신의 웹 컨텐츠를 편하게 저장하고, 어디서나 꺼내 보세요.',
   openGraph: {
-    images: '/assets/images/logo.png',
+    images: '/assets/images/clip-og.png',
   },
 };
 

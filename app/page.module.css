@@ -21,65 +21,8 @@
   align-items: center;
 }
 
-.centerText {
-  font-size: 5rem;
-  font-weight: bold;
-  color: transparent;
-  white-space: nowrap;
-  position: relative;
-}
-
-.centerText:before {
-  position: absolute;
-  font-size: 5rem;
-  font-weight: bold;
-  top: 0;
-  left: 0;
-  color: var(--font-color);
-  border-right: 3px solid var(--font-color);
-  animation: typing 4s ease-in-out forwards infinite;
-}
-
 .videoPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-
-
-@keyframes typing {
-  0% {
-    content: '';
-  }
-  10% {
-    content: 'C';
-  }
-  20% {
-    content: 'CL';
-  }
-  30% {
-    content: 'CLI';
-  }
-  40% {
-    content: 'CLIP';
-  }
-  50% {
-    content: 'CLIP';
-  }
-  60% {
-    content: 'CLIP';
-  }
-  70% {
-    content: 'CLI';
-  }
-  80% {
-    content: 'CL';
-  }
-  90% {
-    content: 'C';
-  }
-  100% {
-    content: '';
-  }
 }

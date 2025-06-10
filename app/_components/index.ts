@@ -1,2 +1,3 @@
-export { default as Information } from './information';
-export { default as Footer } from './footer';
+export { default as Information } from './Information';
+export { default as Footer } from './Footer';
+export { default as TypingAnimation } from './TypingAnimation';

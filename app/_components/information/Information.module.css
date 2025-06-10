@@ -8,7 +8,7 @@
 }
 
 .asset {
-  width: 30%;
+  width: 50%;
   height: auto;
   aspect-ratio: 1;
 }
@@ -37,4 +37,14 @@
 
 .appStore {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .asset {
+    width: 100%;
+  }
 }
